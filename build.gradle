@@ -32,8 +32,8 @@ allprojects {
         }
 
         configureGitHubRepo('MCEngine Core API', 'https://maven.pkg.github.com/MCEngine-API/core')
-        configureGitHubRepo('MCEngine Essential Api', 'https://maven.pkg.github.com/MCEngine-API/essential')
-        configureGitHubRepo('MCEngine Essential Common', 'https://maven.pkg.github.com/MCEngine-Common/essential')
+        configureGitHubRepo('MCEngine Economy Api', 'https://maven.pkg.github.com/MCEngine-API/economy')
+        configureGitHubRepo('MCEngine Economy Common', 'https://maven.pkg.github.com/MCEngine-Common/economy')
 
         mavenCentral()
         mavenLocal()
@@ -55,8 +55,8 @@ dependencies {
     compileOnly 'org.spigotmc:spigot-api:1.21.8-R0.1-SNAPSHOT'
 
     compileOnly 'io.github.mcengine:core-api:2025.0.8-31'
-    compileOnly 'io.github.mcengine:essential-api:2025.0.8-31'
-    compileOnly 'io.github.mcengine:essential-common:2025.0.8-31'
+    compileOnly 'io.github.mcengine:economy-api:2025.0.8-31'
+    compileOnly 'io.github.mcengine:economy-common:2025.0.8-31'
 }
 
 shadowJar {
