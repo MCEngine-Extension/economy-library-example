@@ -5,7 +5,26 @@ plugins {
 
 ext {
     user_git_name = System.getenv('USER_GIT_NAME')
+    user_git_token = System.getenv('USER_GIT_TOKEN')
+
+    // GitHub
+    user_github_name = System.getenv('USER_GITHUB_NAME')
     user_github_token = System.getenv('USER_GITHUB_TOKEN')
+
+    // GitLab
+    user_gitlab_name = System.getenv('USER_GITLAB_NAME')
+    user_gitlab_token = System.getenv('USER_GITLAB_TOKEN')
+
+    // Organization
+    organization_id = System.getenv('ORGANIZATION_ID')
+    organization_name = System.getenv('ORGANIZATION_NAME') ?: 'MCEngine-Extension'
+    organization_token = System.getenv('ORGANIZATION_TOKEN')
+
+    // Repository
+    repository_id = System.getenv('REPOSITORY_ID')
+    repository_name = System.getenv('REPOSITORY_NAME') ?: 'economy-library-example'
+    repository_token = System.getenv('REPOSITORY_TOKEN')
+
     jarName = System.getenv('PROJECT_NAME') ?: 'EconomyExampleLibrary'
 }
 
